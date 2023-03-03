@@ -18,7 +18,7 @@ export class AppController {
       }
     })
   }))
-  uploadFile(@UploadedFile() file, @Body() body:any) {
+  uploadFile(@UploadedFile() file, @Query() body:any) {
     // console.log(file)
     this.appService.bulkupload(file,body);
   }

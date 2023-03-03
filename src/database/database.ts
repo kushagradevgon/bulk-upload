@@ -1,10 +1,11 @@
 import { Model, ForeignKeyViolationError, ValidationError, knexSnakeCaseMappers } from 'objection'
 import  Knex  from 'knex'
 import { Global, Module } from '@nestjs/common';
-import FundsModel from 'src/model/addresses';
+import FundsModel from 'src/model/cams';
+import FundkarvyModel from 'src/model/karvy';
 
 
-const models=[FundsModel]
+const models=[FundsModel,FundkarvyModel]
 
 const modelproviders=models.map((model)=>{
     return {provide:model.name,

@@ -2,9 +2,13 @@ import { Model } from "objection";
 import { BaseModel } from "./baseModel";
 
 
-export default class FundsModel extends BaseModel {
+
+
+
+
+  export default class FundkarvyModel extends BaseModel {
     
-    static tableName = 'funds';
+    static tableName = 'tbl_karvy_mst';
     productCode?:string
         fund ?:string
         folioNumber ?:string

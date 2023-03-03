@@ -3,7 +3,7 @@ import { Knex } from "knex";
 
 export async function up(knex: Knex): Promise<void> {
     return knex.raw(`
-    CREATE TABLE tbl_karvy_mst(
+    CREATE TABLE tbl_cams_mst(
         id serial not null ,
         uid varchar(155),
         product_code varchar(200),
